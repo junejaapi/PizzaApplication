@@ -4,5 +4,4 @@ This a good looking pizza application for my college java project
 It uses javafxml and javafx
 I used scene builder to make the UI of the application
 
-
-[!alt text](https://github.com/junejaapi/PizzaApplication/blob/master/Images/ad.JPG)
+![](https://github.com/junejaapi/PizzaApplication/blob/master/Images/ad.JPG)

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="700.0" prefWidth="731.0" style="-fx-background-image: url(file:/C:/Assignment1_Ashish_Juneja_Eclipse/Images/background.png); -fx-background-size: 700;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ImageController">
+   <children>
+      <ImageView fitHeight="103.0" fitWidth="731.0" layoutY="-4.0">
+         <image>
+            <Image url="file:/C:/Assignment1_Ashish_Juneja_Eclipse/Images/navbar.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="125.0" fitWidth="301.0" layoutX="193.0" layoutY="14.0" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Assignment1_Ashish_Juneja_Eclipse/Images/logo.png" />
+         </image>
+         <effect>
+            <Glow level="0.68" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="user" fitHeight="76.0" fitWidth="57.0" layoutX="28.0" layoutY="17.0" onMouseClicked="#login" preserveRatio="true">
+         <image>
+            <Image url="@../../../Assignment1_Ashish_Juneja_Eclipse/Images/user.png" />
+         </image>
+         <effect>
+            <Glow level="0.53" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </ImageView>
+      <Group fx:id="finalPizza" />
+      <ImageView fx:id="image" fitHeight="282.0" fitWidth="270.0" layoutX="205.0" layoutY="145.0" onMouseClicked="#changeImage" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/user.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label fx:id="path" layoutX="7.0" layoutY="516.0" prefHeight="49.0" prefWidth="717.0" style="-fx-border-color: black;" text="PATH ADDRESS" textFill="WHITE">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <Button layoutX="305.0" layoutY="450.0" mnemonicParsing="false" onAction="#uploadImage" text="UPLOAD">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="76.0" fitWidth="104.0" layoutX="28.0" layoutY="113.0" onMouseClicked="#mainPage" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/back.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="700.0" prefWidth="731.0" style="-fx-background-image: url(file:///C:/Project_AshishJuneja_Eclipse/Images/background.png); -fx-background-size: 700;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.IndexController">
+   <children>
+      <ImageView fitHeight="103.0" fitWidth="731.0" layoutY="-4.0">
+         <image>
+            <Image url="file:///C:/Project_AshishJuneja_Eclipse/Images/navbar.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="125.0" fitWidth="301.0" layoutX="193.0" layoutY="14.0" preserveRatio="true">
+         <image>
+            <Image url="file:///C:/Project_AshishJuneja_Eclipse/Images/logo.png" />
+         </image>
+         <effect>
+            <Glow level="0.68" />
+         </effect>
+      </ImageView>
+      <Button fx:id="cart" contentDisplay="CENTER" layoutX="567.0" layoutY="16.0" lineSpacing="1.0" mnemonicParsing="false" onAction="#checkOut" prefHeight="64.0" prefWidth="128.0" style="-fx-background-color: #c2652e;" text="CHECK OUT  ( NO ITEM ) " textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <effect>
+            <Glow level="0.0" />
+         </effect>
+         <font>
+            <Font name="Microsoft Sans Serif" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="slider" layoutX="121.0" layoutY="123.0" mnemonicParsing="false" prefHeight="232.0" prefWidth="463.0" style="-fx-background-image: url(file:///C:/Project_AshishJuneja_Eclipse/Images/background.png);">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button id="favorder" layoutX="179.0" layoutY="377.0" mnemonicParsing="false" prefHeight="103.0" prefWidth="120.0" style="-fx-background-color: #379b01;" text="FAVORITE ORDER" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Microsoft Sans Serif" size="17.0" />
+         </font>
+         <effect>
+            <Glow level="0.51" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button id="lastorder" layoutX="391.0" layoutY="377.0" mnemonicParsing="false" prefHeight="103.0" prefWidth="120.0" style="-fx-background-color: #379b01;" text="REPEAT LAST ORDER" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Microsoft Sans Serif" size="17.0" />
+         </font>
+         <effect>
+            <Glow level="0.51" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fx:id="drinks" fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="557.0" onMouseClicked="#buyDrinks" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/drinks.png" />
+         </image>
+         <effect>
+            <Glow level="0.46" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="order" fitHeight="200.0" fitWidth="300.0" layoutX="216.0" layoutY="495.0" onMouseClicked="#customizePizza" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/singlepizza.png" />
+         </image>
+         <effect>
+            <Glow level="0.58" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="wings" fitHeight="150.0" fitWidth="200.0" layoutX="517.0" layoutY="557.0" onMouseClicked="#buyWings" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/wings.png" />
+         </image>
+         <effect>
+            <Glow level="0.56" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="slideleft" fitHeight="89.0" fitWidth="87.0" layoutX="14.0" layoutY="195.0" onMouseClicked="#slideLeft" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/leftarrow.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="slideright" fitHeight="89.0" fitWidth="87.0" layoutX="628.0" layoutY="195.0" onMouseClicked="#slideRight" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/rightarrow.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="user" fitHeight="76.0" fitWidth="57.0" layoutX="28.0" layoutY="17.0" onMouseClicked="#login" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/user.png" />
+         </image>
+         <effect>
+            <Glow level="0.53" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label layoutX="88.0" layoutY="521.0" text="DRINK" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+         <effect>
+            <Glow level="0.63" />
+         </effect>
+      </Label>
+      <Label layoutX="327.0" layoutY="509.0" text="PIZZA" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+         <effect>
+            <Glow level="0.91" />
+         </effect>
+      </Label>
+      <Label layoutX="611.0" layoutY="530.0" text="WINGS" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+         <effect>
+            <Glow level="0.86" />
+         </effect>
+      </Label>
+   </children>
+</AnchorPane>

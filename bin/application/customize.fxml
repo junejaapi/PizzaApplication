@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="700.0" prefWidth="731.0" style="-fx-background-image: url(file:///C:/Project_AshishJuneja_Eclipse/Images/background.png); -fx-background-size: 700;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CustomizeController">
+   <children>
+      <ImageView fitHeight="103.0" fitWidth="731.0" layoutY="-4.0">
+         <image>
+            <Image url="file:///C:/Project_AshishJuneja_Eclipse/Images/navbar.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="125.0" fitWidth="301.0" layoutX="193.0" layoutY="14.0" preserveRatio="true">
+         <image>
+            <Image url="file:///C:/Project_AshishJuneja_Eclipse/Images/logo.png" />
+         </image>
+         <effect>
+            <Glow level="0.68" />
+         </effect>
+      </ImageView>
+      <Button fx:id="cart" contentDisplay="CENTER" layoutX="567.0" layoutY="16.0" lineSpacing="1.0" mnemonicParsing="false" onAction="#checkOut" prefHeight="64.0" prefWidth="128.0" style="-fx-background-color: #c2652e;" text="CHECK OUT  ( NO ITEM )" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <effect>
+            <Glow level="0.0" />
+         </effect>
+         <font>
+            <Font name="Microsoft Sans Serif" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fx:id="user" fitHeight="76.0" fitWidth="57.0" layoutX="28.0" layoutY="17.0" preserveRatio="true">
+         <image>
+            <Image url="file:///C:/Project_AshishJuneja_Eclipse/Images/user.png" />
+         </image>
+         <effect>
+            <Glow level="0.53" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <SplitMenuButton fx:id="pizzasize" layoutX="17.0" layoutY="190.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="282.0" text="Choose Pizzza Size">
+        <items>
+          <MenuItem mnemonicParsing="false" onAction="#small" text="Small, $7.50, 180Cals/slice" />
+          <MenuItem mnemonicParsing="false" onAction="#medium" text="Medium, $8.95, 190Cals/slice" />
+          <MenuItem mnemonicParsing="false" onAction="#large" text="Large, $10.95, 220Cals/slice" />
+          <MenuItem mnemonicParsing="false" onAction="#xlarge" text="XLarge, 13.95, 230Cals/slice" />
+        </items>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </SplitMenuButton>
+      <SplitMenuButton fx:id="crust" layoutX="17.0" layoutY="276.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="282.0" text="Choose Dough/Sauce/Cheese">
+        <items>
+          <MenuItem mnemonicParsing="false" onAction="#addCrust" text="Regular Dough, 140Cals" />
+          <MenuItem mnemonicParsing="false" onAction="#addCrust" text="Regular Thin Crust, 100Cals" />
+          <MenuItem mnemonicParsing="false" onAction="#addCrust" text="Regular Thick Crust, 180Cals" />
+          <MenuItem mnemonicParsing="false" onAction="#addCrust" text="Whole Grain Crust, 130Cals" />
+          <MenuItem mnemonicParsing="false" onAction="#addCrust" text="Whole Grain Thin Crust, 90Cals" />
+          <MenuItem mnemonicParsing="false" onAction="#addCrust" text="Whole Grain Thick Crust, 160Cals" />
+        </items>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </SplitMenuButton>
+      <SplitMenuButton layoutX="17.0" layoutY="362.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="282.0" text="Choose Toppings">
+        <items>
+          <MenuItem fx:id="ar" mnemonicParsing="false" onAction="#addArtichokes" text="Veggie, Artichokes, 0Cals" />
+          <MenuItem fx:id="olives" mnemonicParsing="false" onAction="#addOlives" text="Veggie, Kalamata Olives, 10Cals" />
+          <MenuItem fx:id="br" mnemonicParsing="false" onAction="#addBroccoli" text="Veggie, Broccoli, 5Cals" />
+          <MenuItem fx:id="mush" mnemonicParsing="false" onAction="#addMushrooms" text="Veggie, Mushrooms, 5Cals" />
+          <MenuItem fx:id="sc" mnemonicParsing="false" onAction="#addSChicken" text="Meat, Sriracha Chicken, 15Cals" />
+          <MenuItem fx:id="bc" mnemonicParsing="false" onAction="#addBChicken" text="Meat, Buffalo Chicken, 20Cals" />
+          <MenuItem fx:id="bacon" mnemonicParsing="false" onAction="#addBacon" text="Meat, Bacon Strips, 20Cals" />
+          <MenuItem fx:id="beef" mnemonicParsing="false" onAction="#addBeef" text="Meat, Ground Beef, 25Cals" />
+          <MenuItem fx:id="pepper" mnemonicParsing="false" onAction="#addPepperoni" text="Meat, Pepperoni 30Cals" />
+          <MenuItem fx:id="cheese" mnemonicParsing="false" onAction="#addHam" text="Meat, Ham, 5Cals" />
+        </items>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </SplitMenuButton>
+      <SplitMenuButton fx:id="instruction" layoutX="17.0" layoutY="448.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="282.0" text="Choose Special Instructions">
+        <items>
+          <MenuItem mnemonicParsing="false" onAction="#addInstructions" text="None" />
+          <MenuItem mnemonicParsing="false" onAction="#addInstructions" text="Lightly Done" />
+          <MenuItem mnemonicParsing="false" onAction="#addInstructions" text="Well Done" />
+        </items>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </SplitMenuButton>
+      <Button fx:id="plus" layoutX="551.0" layoutY="584.0" mnemonicParsing="false" onAction="#plusOne" text="+">
+         <font>
+            <Font size="23.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="minus" layoutX="369.0" layoutY="583.0" mnemonicParsing="false" onAction="#minusOne" text="-">
+         <font>
+            <Font size="23.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TextField fx:id="quantity" alignment="CENTER" layoutX="448.0" layoutY="584.0" onInputMethodTextChanged="#normal" onKeyTyped="#normal" prefHeight="50.0" prefWidth="69.0" text="1">
+         <font>
+            <Font size="23.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <Button fx:id="add" layoutX="512.0" layoutY="645.0" mnemonicParsing="false" onAction="#addPizza" text="ADD" textAlignment="CENTER">
+         <font>
+            <Font size="23.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="price" layoutX="369.0" layoutY="645.0" prefHeight="50.0" prefWidth="135.0" style="-fx-border-color: white; -fx-background-color: #e0e0e0;" text="\$0.0" textAlignment="CENTER">
+         <font>
+            <Font size="30.0" />
+         </font>
+         <effect>
+            <Glow level="0.15" />
+         </effect>
+      </Label>
+      <Button layoutX="89.0" layoutY="599.0" mnemonicParsing="false" onAction="#goBack" prefHeight="82.0" prefWidth="100.0" text="GO BACK" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <Label fx:id="bug" layoutX="8.0" layoutY="528.0" prefHeight="64.0" prefWidth="331.0" textAlignment="CENTER" textFill="WHITE" wrapText="true" />
+      <Group fx:id="pizza" layoutX="496.0" layoutY="329.0">
+         <children>
+            <ImageView fx:id="base" fitHeight="395.0" fitWidth="370.0" layoutX="-163.0" layoutY="-183.0">
+               <image>
+                  <Image url="@../../../Assignment1_Ashish_Juneja_Eclipse/Images/defaultpizza.png" />
+               </image>
+               <effect>
+                  <Glow level="0.03" />
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="393.0" fitWidth="375.0" layoutX="-163.0" layoutY="-183.0">
+               <image>
+                  <Image url="@../../Images/pepper.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Group>
+   </children>
+</AnchorPane>

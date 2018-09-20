@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="301.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.DialogController">
+   <children>
+      <ImageView fitHeight="318.0" fitWidth="526.0" layoutX="-3.0" layoutY="39.0">
+         <image>
+            <Image url="@../../Images/background.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="email" layoutX="83.0" layoutY="81.0" onMouseClicked="#removeLabel" prefHeight="39.0" prefWidth="345.0" promptText="ENTER EMAIL ID">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></TextField>
+      <Button fx:id="google" layoutX="231.0" layoutY="151.0" mnemonicParsing="false" onAction="#sendCode" style="-fx-background-color: #f98611;" />
+      <ImageView fitHeight="39.0" fitWidth="526.0" layoutX="-3.0">
+         <image>
+            <Image url="@../../Images/navbar.png" />
+         </image>
+      </ImageView>
+      <Button cancelButton="true" contentDisplay="CENTER" layoutX="484.0" mnemonicParsing="false" onAction="#closeDialog" prefHeight="31.0" prefWidth="36.0" style="-fx-background-color: orange;" text="X" textFill="#4dff00">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="195.0" layoutY="2.0" text="WELCOME" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="147.0" fitWidth="113.0" layoutX="28.0" layoutY="137.0">
+         <image>
+            <Image url="@../../Images/coupon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="147.0" fitWidth="113.0" layoutX="393.0" layoutY="140.0">
+         <image>
+            <Image url="@../../Images/coupon.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="bug" layoutX="104.0" layoutY="317.0" prefHeight="15.0" prefWidth="295.0" textFill="WHITE" underline="true">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
